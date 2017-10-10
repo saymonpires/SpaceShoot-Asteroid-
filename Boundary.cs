@@ -2,10 +2,8 @@
 using System.Collections;
 
 [System.Serializable]
-public class Boundary: MonoBehaviour{
+public class Boundary{
 	public float xMin, xMax, zMin, zMax;
-}
-
-
+}	
 
 	

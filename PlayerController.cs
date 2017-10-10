@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
 	// Create public variables for player speed, and for the Text UI game objects
 	public float speed;
-	public float tilt;
+	public float tilt; // I used 0,5 on my Game
 
 	public GameObject shot;
 	public Transform shotSpawn;
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
 			0.0f, 
 			Mathf.Clamp (rb.position.z, boundary.zMin, boundary.zMax)
 		);
-		rb.rotation = Quaternion.Euler (0.0f, 0.0f, rb.velocity.x * -tilt);
+		rb.rotation = Quaternion.Euler (rb.velocity.z * -tilt, 0.0f, rb.velocity.x * (-tilt-2.0f));// the rb.valocity is just for made effect on moviment in Z
 	}
 
 
