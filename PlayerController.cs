@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 	public float speed;
 	public float tilt; // I used 0,5 on my Game
 
+
+
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate;
